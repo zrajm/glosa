@@ -15,6 +15,7 @@
         border-collapse: collapse;
     }
     table td {
+        vertical-align: top;
         border: 1px solid black;
         padding: .125em .25em;
     }
@@ -22,15 +23,14 @@
 </head>
 <body>
 
-<h1>Fältet glosa i lexikon</h1>
+<h1>Fältet ’glosa’ i lexikon</h1>
+
+<p>Devis: <b>Så kort som möjligt, men unikt</b>
+
+
+<p><tt>BJUDA-PÅ(JJ)</tt> <i>inte</i> <tt>BJUDA(JJ)-PÅ</tt>
 
 <section>
-  <h1>Motto: Så lite som möjligt men ändå vara unikt</h1>
-</section>
-
-<tt>BJUDA-PÅ(JJ)</tt> inte <tt>*BJUDA(JJ)-PÅ</tt>
-
-<section border=1>
   <h1><tt>PEK</tt> och <tt>POSS</tt></h1>
 
   <p>Använd <tt>PEK</tt> (inte <tt>PRO</tt>) och <tt>POSS</tt>.
@@ -61,10 +61,21 @@
       <tr><td><tt>FÅ-TYST-PÅ(L^JJvt)</tt>  <td>[<a href="http://teckensprakslexikon.su.se/ord/00103">id 00103</a>]
       <tr><td><tt>FÅ-TYST-PÅ(JJt)</tt>     <td>[<a href="http://teckensprakslexikon.su.se/ord/05104">id 05104</a>]
     </table>
-    <figcaption>Exempel på teckenpar i lexikon vars glosa blir unik bara om
-      alla segmenten inkluderas i glosan.
+    <figcaption>Exempel på tecken i lexikon vars glosa blir unik bara om alla
+      segmenten inkluderas i glosan.
     </figcaption>
   </figure>
+
+  <figure>
+    <table border=1>
+      <tr><td><tt>BIBLIOTEK(J)</tt>  <td>[<a href="http://teckensprakslexikon.su.se/ord/00130">id 00130</a>]
+      <tr><td><tt>BIBLIOTEK(JJ)</tt>     <td>[<a href="http://teckensprakslexikon.su.se/ord/00710">id 00710</a>]
+    </table>
+    <figcaption>Exempel på tecken i lexikon vars glosa blir unik även om inte
+      alla segment tas med i glosan.
+    </figcaption>
+  </figure>
+
 </section>
 
 <section>
@@ -80,6 +91,48 @@
 
 </section>
 
+
+<section>
+  <h1>Manuell beskrivning</h1>
+
+  <p>Inom parentes i glosan står en manuell beskrivning. Denna
+  inkluderar <i>alltid</i> handformerna såsom de ser ut i tecknets början
+  enligt följande:
+
+  <figure>
+    <table border=1>
+      <tr>
+        <td><tt>J</tt>
+        <td>Enhandstecken
+      <tr>
+        <td><tt>JJ</tt>
+        <td>Tvåhandstecken med två aktiva händer
+          <br><tt>JJ</tt> = dubbel artikulator
+          <br><tt>JJvt</tt> = dubbel artikulator med <tt>Jvt</tt> som handform för bägge
+          <br><tt>5bL</tt> = dubbel artikulator med olika handformer (som i <a href="http://teckensprakslexikon.su.se/ord/12364">fallskärm</a>)
+      <tr>
+        <td><tt>Jvt+Jvt</tt>
+        <td>Tvåhandstecken med en passiv hand (<tt><var>passiv</var>+<var>aktiv</var></tt>)
+    </table>
+    <figcaption>Övergripande struktur av den manuella beskrivningen.</figcaption>
+  </figure>
+
+  <p>Därefter följer en icke-obligatorisk del som kan användas för
+  disambiguering. Denna del inkluderas <i>endast</i> om glosan annars skulle
+  bli tvetydig.
+
+  <figure>
+    <table border=1>
+      <tr><td><tt>PLUGGA(JJ+upp)</tt> <td>[<a href="http://teckensprakslexikon.su.se/ord/16267">id 16267</a>]
+      <tr><td><tt>PLUGGA(JJ)</tt>     <td>[<a href="http://teckensprakslexikon.su.se/ord/00616">id 00616</a>]
+    </table>
+    <figcaption>I tabellen ovan är <tt>PLUGGA(JJ+upp)</tt> ett exempel på ett
+      tecken vars glosa endast blir unikt om ’<tt>+upp</tt>’ inkluderas i den
+      manuella beskrivningen. Eftersom tecknets glosa inte blir unik utan detta
+      så är den delen obligatorisk här.
+    </figcaption>
+  </figure>
+
 <section>
   <h1>Attityd och rörelseriktning</h1>
 
@@ -87,7 +140,9 @@
 
   <table border=1>
     <tr>
-      <th>Rörelse
+      <th rowspan=2>Rörelse
+      <th colspan=2>Attityd
+    <tr>
       <th>Riktning
       <th>Vändning
     <tr>
@@ -97,11 +152,11 @@
     <tr>
       <td>ner
       <td>nerr
-      <td>nerv / 3 nedv
+      <td>nerv (nedv)
     <tr>
       <td>uppner
-      <td>
-      <td>
+      <td>-
+      <td>-
     <tr>
       <td>fram
       <td>framr
@@ -109,11 +164,11 @@
     <tr>
       <td>in
       <td>inr
-      <td>inv / 1 inåtv
+      <td>inv (inåtv)
     <tr>
       <td>framin
-      <td>
-      <td>
+      <td>-
+      <td>-
     <tr>
       <td>vä
       <td>vär
@@ -121,17 +176,17 @@
     <tr>
       <td>hö
       <td>hör
-      <td>
+      <td>höv
     <tr>
       <td>vähö
-      <td>
-      <td>
+      <td>-
+      <td>-
     <tr>
-      <td>
+      <td>konv
       <td>motr
       <td>motv
     <tr>
-      <td>
+      <td>div
       <td>frånr
       <td>frånv
   </table>
@@ -164,7 +219,7 @@
       1 axel
   </pre>
 </section>
-
+</section>
 
 <section>
   <h1>Annat</h1>
