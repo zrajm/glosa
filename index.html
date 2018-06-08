@@ -19,6 +19,11 @@
         border: 1px solid black;
         padding: .125em .25em;
     }
+    tt {
+        background: #ddd;
+        border: 1px outset #ddd;
+        border-radius: 2px;
+    }
   </style>
 </head>
 <body>
@@ -31,20 +36,31 @@
 <p><tt>BJUDA-PÅ(JJ)</tt> <i>inte</i> <tt>BJUDA(JJ)-PÅ</tt>
 
 <section>
-  <h1><tt>PEK</tt> och <tt>POSS</tt></h1>
+  <h1>Utan utförandebeskrivning</h1>
 
-  <p>Använd <tt>PEK</tt> (inte <tt>PRO</tt>) och <tt>POSS</tt>.
+  <section>
+    <h1><tt>PEK</tt> och <tt>POSS</tt></h1>
 
-  <table border=1>
-    <tr><th>           <td colspan=2>Singular
-    <tr><td>1:e person <td>PEK-1  <td>POSS-1
-    <tr><td>2:e person <td>PEK    <td>POSS
-    <tr><td>3:e person <td>PEK-3  <td>POSS-3
-  </table>
+    <p>Använd <tt>PEK</tt> (inte <tt>PRO</tt>) och <tt>POSS</tt>.
+
+    <table border=1>
+      <tr><th>           <th colspan=2>Singular
+      <tr><td>1:e person <td><tt>PEK-1</tt>  <td><tt>POSS-1</tt>
+      <tr><td>2:e person <td><tt>PEK</tt>    <td><tt>POSS</tt>
+      <tr><td>3:e person <td><tt>PEK-3</tt>  <td><tt>POSS-3</tt>
+    </table>
+  </section>
+
+  <section>
+    <h1>Bokstaverade tecken <tt>@b</tt></h1>
+
+    <p>Dessa teckens glosa slutar på <tt>@b</tt> och de har ingen
+    utförandebeskrivning.
+  </section>
 </section>
 
 <section>
-  <h1>Sammansatta tecken (<tt>^</tt>)</h1>
+  <h1>Sammansatta tecken <tt>^</tt></h1>
 
   <p>Handform specificeras för alla segment.
 
@@ -79,7 +95,7 @@
 </section>
 
 <section>
-  <h1>Sammansmälta tecken (<tt>*</tt>)</h1>
+  <h1>Sammansmälta tecken <tt>*</tt></h1>
 
   <p>Handform specificeras bara för första segmentet (om inte disabmbiguering
   kräver mera).
@@ -93,9 +109,9 @@
 
 
 <section>
-  <h1>Manuell beskrivning</h1>
+  <h1>Utförandebeskrivning <tt>(…)</tt></h1>
 
-  <p>Inom parentes i glosan står en manuell beskrivning. Denna
+  <p>Inom parentes i glosan står en utförandebeskrivning. Denna
   inkluderar <i>alltid</i> handformerna såsom de ser ut i tecknets början
   enligt följande:
 
@@ -113,8 +129,13 @@
       <tr>
         <td><tt>Jvt+Jvt</tt>
         <td>Tvåhandstecken med en passiv hand (<tt><var>passiv</var>+<var>aktiv</var></tt>)
+      <tr>
+        <td><tt>Jvt+…v+Jvt</tt>
+          <br><tt>Jvt+…r+Jvt</tt>
+        <td>Tvåhandstecken med en passiv hand där attityd har angivits för den
+          passiva handen.
     </table>
-    <figcaption>Övergripande struktur av den manuella beskrivningen.</figcaption>
+    <figcaption>Övergripande struktur av utförandebeskrivningen.</figcaption>
   </figure>
 
   <p>Därefter följer en icke-obligatorisk del som kan användas för
@@ -201,6 +222,8 @@
      18 öarm
      13 haka
      13 bröst
+        bröstvä
+        brösthö
      10 näsa
       9 arm
       8 öga
@@ -222,6 +245,24 @@
 </section>
 
 <section>
+  <h1>Munbild</h1>
+
+  <p>För att beskriva att ett tecken har en genuin (icke-inlånad) munbild
+    används <tt>+m</tt>.
+
+  <figure>
+    <table border=1>
+      <tr><td><tt>KÄMPA(Jt+m)</tt> <td>[<a href="http://teckensprakslexikon.su.se/ord/05331">id 05331</a>]
+      <tr><td><tt>KÄMPA(Jt)</tt>     <td>[<a href="http://teckensprakslexikon.su.se/ord/00756">id 00756</a>]
+    </table>
+    <figcaption>Exempel på tecken som endast skiljer sig åt i munbild.</figcaption>
+  </figure>
+
+
+
+</section>
+
+<section>
   <h1>Annat</h1>
 
   <pre>
@@ -235,8 +276,6 @@
       7 spelar
       6 vrid
 
-
-     31 m
 
      13 bakom
      12 inåt
