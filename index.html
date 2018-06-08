@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html><!--*- ispell-dictionary: "svenska" -*-->
 <html>
 <head>
   <!-- Copyright 2017 by zrajm. Released under GPLv3 license. -->
@@ -7,6 +7,17 @@
   <link rel=stylesheet href="intro.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <style>
+    section > table {
+        margin-left: 1em;
+    }
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table td {
+        border: 1px solid black;
+        padding: .125em .25em;
+    }
   </style>
 </head>
 <body>
@@ -15,67 +26,120 @@
   <h1>Motto: Så lite som möjligt för att vara unikt</h1>
 </section>
 
+<tt>BJUDA-PÅ(JJ)</tt> inte <tt>*BJUDA(JJ)-PÅ</tt>
 
-<p><tt>BJUDA-PÅ(JJ)</tt> inte <tt>*BJUDA(JJ)-PÅ</tt>
-
-<section>
-  <h1><tt>PEK</tt> och <tt>POSS</tt>
+<section border=1>
+  <h1><tt>PEK</tt> och <tt>POSS</tt></h1>
 
   <p>Använd <tt>PEK</tt> (inte <tt>PRO</tt>) och <tt>POSS</tt>.
 
-<pre>
-  |------------+--------------+
-  |            | Singular     |
-  |------------+--------------+
-  | 1:e person | PEK-1/POSS-1 |
-  | 2:e person | PEK/POSS     |
-  | 3:e person | PEK-3/POSS-3 |
-  |------------+--------------+
-</pre>
+  <table border=1>
+    <tr><th>           <td colspan=2>Singular
+    <tr><td>1:e person <td>PEK-1  <td>POSS-1
+    <tr><td>2:e person <td>PEK    <td>POSS
+    <tr><td>3:e person <td>PEK-3  <td>POSS-3
+  </table>
 </section>
 
 <section>
-  <h1>Sammansmälta tecken</h1>
+  <h1>Sammansatta tecken (<tt>^</tt>)</h1>
+
+  <p>Handform specificeras för alla segment.
+
+  <blockquote>
+    <tt>INGEN(JJ)^TING</tt>
+  </blockquote>
+
+  <p>Somliga tecken har fler än ett teckensegment fastän de bara har en glosa,
+  för dessa tecken skrivs handformerna i segmenten bara ut om det behövs för
+  att glosan ska bli unik i lexikonet.
+
+  <figure>
+    <table border=1>
+      <tr><td><tt>FÅ-TYST-PÅ(L^JJvt)</tt>  <td>[<a href="http://teckensprakslexikon.su.se/ord/00103">id 00103</a>]
+      <tr><td><tt>FÅ-TYST-PÅ(JJt)</tt>     <td>[<a href="http://teckensprakslexikon.su.se/ord/05104">id 05104</a>]
+    </table>
+    <figcaption>Exempel på teckenpar i lexikon vars glosa blir unik bara om
+      alla segmenten inkluderas i glosan.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h1>Sammansmälta tecken (<tt>*</tt>)</h1>
 
   <p>Handform specificeras bara för första segmentet (om inte disabmbiguering
   kräver mera).
 
-  <tt>FINNS(J)*INTE</tt>
-  <tt>VARA(5)*PEK</tt>
+  <blockquote>
+    <tt>FINNS(J)*INTE</tt>
+    <br><tt>VARA(5)*PEK</tt>
+  </blockquote>
 
 </section>
 
+<section>
+  <h1>Attityd och rörelseriktning</h1>
 
+  <p>
 
-<pre>
-|------------+----------+-----------------|
-| Rörelse    | Riktning | Vändning        |
-|------------+----------+-----------------|
-| 126 upp    | 4 uppr   | 8 uppv          |
-| 110 ner    | 3 nerr   | 2 nerv / 3 nedv |
-| 1   uppner |          |                 |
-| 112 fram   | 12 framr | 4 framv         |
-| 70  in     | 1 inr    | 5 inv / 1 inåtv |
-| 1   framin |          |                 |
-| 48  vä     | 6 vär    | 3 väv           |
-| 61  hö     | 2 hör    |                 |
-| 3   vähö   |          |                 |
-|            | motr     | 2 motv          |
-|            | frånr    | 1 frånv         |
-|------------+----------+-----------------|
-</pre>
+  <table border=1>
+    <tr>
+      <th>Rörelse
+      <th>Riktning
+      <th>Vändning
+    <tr>
+      <td>upp
+      <td>uppr
+      <td>uppv
+    <tr>
+      <td>ner
+      <td>nerr
+      <td>nerv / 3 nedv
+    <tr>
+      <td>uppner
+      <td>
+      <td>
+    <tr>
+      <td>fram
+      <td>framr
+      <td>framv
+    <tr>
+      <td>in
+      <td>inr
+      <td>inv / 1 inåtv
+    <tr>
+      <td>framin
+      <td>
+      <td>
+    <tr>
+      <td>vä
+      <td>vär
+      <td>väv
+    <tr>
+      <td>hö
+      <td>hör
+      <td>
+    <tr>
+      <td>vähö
+      <td>
+      <td>
+    <tr>
+      <td>
+      <td>motr
+      <td>motv
+    <tr>
+      <td>
+      <td>frånr
+      <td>frånv
+  </table>
 
-<pre>
-     87 slås
-     82 vrids
-     54 mot
-     42 cirkel
-     27 båge
-     18 studs
-     17 växel
-      7 spelar
-      6 vrid
+</section>
 
+<section>
+  <h1>Kroppslägen</h1>
+
+  <pre>
      33 uarm
      18 öarm
      13 haka
@@ -96,6 +160,24 @@
       1 handled
       1 ben
       1 axel
+  </pre>
+</section>
+
+
+<section>
+  <h1>Annat</h1>
+
+  <pre>
+     87 slås
+     82 vrids
+     54 mot
+     42 cirkel
+     27 båge
+     18 studs
+     17 växel
+      7 spelar
+      6 vrid
+
 
      31 m
 
@@ -184,6 +266,7 @@
       1 avstånd
       1 ämne
       1 
-</pre>
+  </pre>
+</section>
 </body>
 </html>
